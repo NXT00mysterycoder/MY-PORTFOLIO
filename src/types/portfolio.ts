@@ -374,7 +374,7 @@ export const DEFAULT_PORTFOLIO_DATA: PortfolioData = {
   ],
   contact: {
     email: '26ec200@kpriet.ac.in',
-    linkedinUrl: 'https://www.linkedin.com',
+    linkedinUrl: 'https://www.linkedin.com/in/nishanth-t-739283432',
     githubUrl: 'https://github.com',
     location: 'Coimbatore, India · KPR Institute of Engineering and Technology',
   },
