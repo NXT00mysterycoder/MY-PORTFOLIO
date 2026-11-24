@@ -1,0 +1,966 @@
+<!DOCTYPE html><html lang="en" class="dark scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishanth — ECE Student · Developer · Creative Thinker</title>
+  <meta name="description" content="Personal portfolio of Nishanth, an Electronics and Communication Engineering student, developer, and creative thinker.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent-burgundy': '#A13A4B',
+        'accent-rose': '#FFB2B9',
+        'muted-slate': '#929094',
+        'hairline': '#2A2A2D',
+        'light-primary': '#822235',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#A13A4B',
+        'light-on-primary-container': '#FFCBCF',
+        'light-secondary': '#844F55',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#FFBAC0',
+        'light-on-secondary-container': '#7B474D',
+        'light-tertiary': '#00512A',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#006C3A',
+        'light-on-tertiary-container': '#91EAAB',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FCF8FC',
+        'light-on-background': '#1B1B1E',
+        'light-surface': '#FCF8FC',
+        'light-surface-dim': '#DCD9DD',
+        'light-surface-bright': '#FCF8FC',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F6F2F7',
+        'light-surface-container': '#F0EDF1',
+        'light-surface-container-high': '#EAE7EB',
+        'light-surface-container-highest': '#E4E1E6',
+        'light-on-surface': '#1B1B1E',
+        'light-surface-variant': '#F9DCDD',
+        'light-on-surface-variant': '#564243',
+        'light-outline': '#897173',
+        'light-outline-variant': '#DCC0C1',
+        'dark-primary': '#FFB2B9',
+        'dark-on-primary': '#640920',
+        'dark-primary-container': '#A13A4B',
+        'dark-on-primary-container': '#FFCBCF',
+        'dark-secondary': '#F9B5BB',
+        'dark-on-secondary': '#4E2329',
+        'dark-secondary-container': '#6C3B40',
+        'dark-on-secondary-container': '#E9A7AD',
+        'dark-tertiary': '#80D99C',
+        'dark-on-tertiary': '#00391C',
+        'dark-tertiary-container': '#006C3A',
+        'dark-on-tertiary-container': '#91EAAB',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#131316',
+        'dark-on-background': '#E4E1E6',
+        'dark-surface': '#131316',
+        'dark-surface-dim': '#131316',
+        'dark-surface-bright': '#39393C',
+        'dark-surface-container-lowest': '#0E0E11',
+        'dark-surface-container-low': '#1B1B1E',
+        'dark-surface-container': '#1F1F22',
+        'dark-surface-container-high': '#2A2A2D',
+        'dark-surface-container-highest': '#353438',
+        'dark-on-surface': '#E4E1E6',
+        'dark-surface-variant': '#564243',
+        'dark-on-surface-variant': '#DCC0C1',
+        'dark-outline': '#A48B8C',
+        'dark-outline-variant': '#564243',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '96px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Playfair"', 'sans-serif'],
+        'headline': ['"Playfair"', 'sans-serif'],
+        'title': ['"Instrument Sans"', 'sans-serif'],
+        'body': ['"Instrument Sans"', 'sans-serif'],
+        'label': ['"Instrument Sans"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-xl': ['88px', { lineHeight: '92px', letterSpacing: '-2px', fontWeight: '700' }],
+        'display-xl-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg': ['56px', { lineHeight: '64px', letterSpacing: '-1px', fontWeight: '600' }],
+        'display-lg-mobile': ['30px', { lineHeight: '36px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'headline-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.4px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '1.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '180ms',
+        'card-hover': '300ms',
+        'chapter-reveal': '700ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'card-hover': '0ms',
+        'chapter-reveal': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'cubic-bezier(0.2, 0, 0, 1)',
+        'card-hover': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'chapter-reveal': 'cubic-bezier(0.16, 1, 0.3, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Playfair:ital,opsz,wght@0,5..1200,400..700;1,5..1200,400..700&amp;family=Red+Hat+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Subtle film grain overlay */
+    .film-grain {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.045'/%3E%3C/svg%3E");
+    }
+
+    /* Seamless portrait edge blending into dark charcoal */
+    .portrait-mask {
+      -webkit-mask-image: radial-gradient(ellipse 74% 78% at 52% 44%, rgba(0,0,0,1) 48%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0) 96%);
+      mask-image: radial-gradient(ellipse 74% 78% at 52% 44%, rgba(0,0,0,1) 48%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0) 96%);
+    }
+
+    /* Scroll reveal animations */
+    .reveal-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 700ms cubic-bezier(0.16, 1, 0.3, 1), transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Animated nav link underline */
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 1px;
+      background-color: #FFB2B9;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link:hover::after,
+    .nav-link.is-active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    /* Custom subtle cursor follower on desktop pointers */
+    @media (pointer: fine) {
+      #cursor-ring {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 28px;
+        height: 28px;
+        border-radius: 9999px;
+        border: 1px solid rgba(255, 178, 185, 0.35);
+        pointer-events: none;
+        z-index: 60;
+        transform: translate(-50%, -50%);
+        transition: width 200ms ease, height 200ms ease, border-color 200ms ease, opacity 200ms ease;
+        opacity: 0;
+      }
+      #cursor-ring.is-hovering {
+        width: 44px;
+        height: 44px;
+        border-color: rgba(255, 178, 185, 0.75);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto !important; }
+      .reveal-up {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      #cursor-ring { display: none !important; }
+    }
+  </style>
+</head>
+<body class="min-h-[1024px] bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface font-body antialiased selection:bg-accent-burgundy selection:text-light-on-primary relative overflow-x-hidden" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="film-grain fixed inset-0 pointer-events-none z-50" aria-hidden="true"></div>
+
+  <!-- Subtle Cursor Ring -->
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Floating Navigation Bar -->
+  <header id="site-navbar" class="fixed top-0 inset-x-0 z-40 transition-colors duration-card-hover ease-card-hover">
+    <nav aria-label="Primary Navigation" class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between gap-6">
+      <a href="#home" class="inline-flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose rounded-sm">
+        <span class="w-2 h-2 rounded-full bg-accent-rose" aria-hidden="true"></span>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase tracking-widest text-light-on-surface dark:text-dark-on-surface">NISHANTH</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="#home" data-nav-link="home" class="nav-link font-label text-label-lg text-light-on-surface dark:text-dark-on-surface hover:text-accent-rose transition-colors duration-state-change">Home</a></li>
+        <li><a href="#about" data-nav-link="about" class="nav-link font-label text-label-lg text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface transition-colors duration-state-change">About</a></li>
+        <li><a href="#projects" data-nav-link="projects" class="nav-link font-label text-label-lg text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface transition-colors duration-state-change">Projects</a></li>
+        <li><a href="#skills" data-nav-link="skills" class="nav-link font-label text-label-lg text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface transition-colors duration-state-change">Skills</a></li>
+        <li><a href="#achievements" data-nav-link="achievements" class="nav-link font-label text-label-lg text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface transition-colors duration-state-change">Achievements</a></li>
+        <li><a href="#contact" data-nav-link="contact" class="nav-link font-label text-label-lg text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface transition-colors duration-state-change">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Trigger -->
+      <button id="mobile-menu-btn" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Open navigation menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline hover:border-accent-rose/50 transition-colors duration-state-change cursor-pointer">
+        <i data-lucide="menu" class="w-4 h-4" aria-hidden="true"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-light-surface-container-lowest dark:bg-dark-surface-container-lowest border-b border-hairline px-6 py-6">
+      <ul class="flex flex-col gap-4">
+        <li><a href="#home" class="mobile-nav-item block font-title text-title-md text-light-on-surface dark:text-dark-on-surface py-1">Home</a></li>
+        <li><a href="#about" class="mobile-nav-item block font-title text-title-md text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface py-1">About</a></li>
+        <li><a href="#projects" class="mobile-nav-item block font-title text-title-md text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface py-1">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-item block font-title text-title-md text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface py-1">Skills</a></li>
+        <li><a href="#achievements" class="mobile-nav-item block font-title text-title-md text-muted-slate hover:text-light-on-surface dark:hover:text-dark-on-surface py-1">Achievements</a></li>
+        <li><a href="#contact" class="mobile-nav-item block font-title text-title-md text-accent-rose py-1">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="relative min-h-[1024px] flex items-center pt-24 pb-16 bg-light-surface-container-lowest dark:bg-dark-surface-container-lowest overflow-hidden" data-stitch-vh="min-h-[1024px]===min-h-screen">
+      <!-- Subtle ambient architectural grid hairline -->
+      <div class="absolute inset-0 pointer-events-none opacity-20" aria-hidden="true">
+        <div class="max-w-6xl mx-auto h-full border-x border-hairline"></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-6 md:px-10 w-full relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+          <!-- Left Column: Cinematic Typography -->
+          <div class="lg:col-span-6 flex flex-col gap-6 order-2 lg:order-1">
+            <div class="reveal-up is-visible flex items-center gap-3">
+              <span class="w-8 h-px bg-accent-rose" aria-hidden="true"></span>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose">HELLO, I&#39;M</span>
+            </div>
+
+            <h1 data-design-text-token="display-xl" class="reveal-up is-visible font-headline text-display-xl-mobile md:text-display-xl text-light-on-surface dark:text-dark-on-surface tracking-tight text-balance">
+              NISHANTH
+            </h1>
+
+            <p data-design-text-token="label-sm" class="reveal-up is-visible font-label text-label-sm uppercase text-muted-slate">
+              ECE STUDENT · DEVELOPER · CREATIVE THINKER
+            </p>
+
+            <p data-design-text-token="body-lg" class="reveal-up is-visible font-body text-body-lg text-light-on-surface/80 dark:text-dark-on-surface/80 max-w-prose text-pretty">
+              Exploring technology, building ideas, and turning curiosity into meaningful innovation.
+            </p>
+
+            <div class="reveal-up is-visible flex flex-wrap items-center gap-4 pt-2">
+              <!-- COMPONENT: button-primary -->
+              <a href="#projects" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-light-primary-container dark:bg-dark-primary-container text-light-on-primary border border-accent-burgundy hover:bg-accent-burgundy/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose transition-colors duration-state-change ease-state-change cursor-pointer">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg">Explore Projects</span>
+                <i data-lucide="arrow-down-right" class="w-4 h-4" aria-hidden="true"></i>
+              </a>
+
+              <!-- COMPONENT: button-with-icon -->
+              <a href="#contact" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-light-on-surface dark:text-dark-on-surface border border-hairline hover:border-accent-rose/60 hover:bg-light-surface-container-high dark:hover:bg-dark-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose transition-colors duration-state-change ease-state-change cursor-pointer">
+                <i data-lucide="mail" class="w-4 h-4 text-accent-rose" aria-hidden="true"></i>
+                <span data-design-text-token="label-lg" class="font-label text-label-lg">Let&#39;s Connect</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Authentic Portrait Integration -->
+          <div class="lg:col-span-6 order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div id="hero-portrait-wrap" class="relative w-full max-w-md lg:max-w-lg aspect-[4/5] flex items-center justify-center">
+              <!-- Subtle deep burgundy studio backdrop aura (restrained, no neon) -->
+              <div class="absolute inset-8 rounded-full bg-accent-burgundy/15 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+              <!-- Uploaded Portrait with Radial Mask & Contrast Grading -->
+              <div class="relative w-full h-full overflow-hidden portrait-mask">
+                <img id="hero-portrait-img" src="https://lh3.googleusercontent.com/aida/ALJJyrDiAwpmj9S_HhpCIC0TLM2dpZ7cFgB2_f3UCbEQ29TEmSAfHkMT4eh8qffDKV1eQxIfE-cK8hujO5I2JwxtefI9vE3RgWNF1a0NPAyQPhO_-57UQY1hjF7S1pjw1USGACrbojar-La8O1rDC1DqMJP_wE3SFRUhR_vqdStiW0YemhJ03L9BSqYd8NTnvR339_y9eGUG7ccagPMOUC75dNbtkxNJLhzpVH8k8c-zFtSqBKY43cDmvb8mqToB" alt="Portrait of Nishanth in a dark tailored suit and burgundy shirt" class="w-full h-full object-cover object-top filter contrast-[1.06] brightness-[0.94] saturate-[0.92] transition-transform duration-chapter-reveal ease-chapter-reveal">
+                <!-- Bottom dark vignette blend -->
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-dark-surface-container-lowest via-dark-surface-container-lowest/60 to-transparent pointer-events-none" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" aria-label="Scroll to About section" class="hidden sm:flex flex-col items-center gap-2 absolute bottom-6 left-1/2 -translate-x-1/2 text-muted-slate hover:text-accent-rose transition-colors duration-state-change z-10">
+        <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase">Scroll</span>
+        <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="py-24 md:py-32 bg-light-surface dark:bg-dark-surface border-t border-hairline">
+      <div class="max-w-6xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+          <div class="lg:col-span-5 reveal-up">
+            <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-4">01 · About Me</span>
+            <h2 data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-light-on-surface dark:text-dark-on-surface text-balance">
+              Beyond the Code.
+            </h2>
+          </div>
+
+          <div class="lg:col-span-7 flex flex-col gap-6 reveal-up">
+            <p data-design-text-token="body-lg" class="font-body text-body-lg text-light-on-surface/90 dark:text-dark-on-surface/90 text-pretty">
+              I&#39;m an Electronics and Communication Engineering student with a passion for technology, programming, innovation, and creative problem-solving.
+            </p>
+            <p data-design-text-token="body-lg" class="font-body text-body-lg text-muted-slate text-pretty">
+              I enjoy exploring new concepts, learning through experimentation, and transforming ideas into practical solutions. From software development to electronics-based projects, I&#39;m constantly looking for opportunities to challenge myself, collaborate, and grow.
+            </p>
+
+            <!-- Highlighted Pillars -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-hairline">
+              <div class="p-4 rounded-lg bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-light-on-surface dark:text-dark-on-surface block">TECHNOLOGY</span>
+              </div>
+              <div class="p-4 rounded-lg bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block">INNOVATION</span>
+              </div>
+              <div class="p-4 rounded-lg bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-light-on-surface dark:text-dark-on-surface block">LEADERSHIP</span>
+              </div>
+              <div class="p-4 rounded-lg bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block">CREATIVITY</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS SECTION -->
+    <section id="projects" class="py-24 md:py-32 bg-light-surface-container-lowest dark:bg-dark-surface-container-lowest border-t border-hairline">
+      <div class="max-w-6xl mx-auto px-6 md:px-10">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 reveal-up">
+          <div>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-3">02 · Selected Work</span>
+            <h2 data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-light-on-surface dark:text-dark-on-surface text-balance">
+              Engineered Prototypes.
+            </h2>
+          </div>
+          <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate max-w-sm">
+            Hardware-software systems built to solve real-world safety and detection challenges.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+
+          <!-- Project 01: PROJECT HELM -->
+          <!-- COMPONENT: card-action -->
+          <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="reveal-up group rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline overflow-hidden flex flex-col justify-between transition-colors duration-card-hover ease-card-hover hover:border-accent-rose/40 h-full">
+            <div>
+              <div class="relative aspect-video overflow-hidden bg-light-surface-container-high dark:bg-dark-surface-container-high border-b border-hairline">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAt81VBNHqXILJ8BA4YfD3EB5m_d60FUbEs8KQGt5KHwa1wB2UQXXhgPhFEQrm4ddUq2J7916bBbEWwEFf_kGxHhHaTjjGrtYTNzANS3N4Ky7rDVw1TPLTpUbHLrGcHPoEtrfQC7eVB4btxsnAnYts0g_J0EXyFK-RSp7GJWJxrzHrSDtCguNfq36a9XbbTmvZ9-avjG_V8A-T6Usrb_7XkqmAEvNwDRjeZCqNuRF4ROsHgWEBalg" alt="Project Helm smart helmet accident detection hardware prototype" class="w-full h-full object-cover transition-transform duration-chapter-reveal ease-chapter-reveal group-hover:scale-[1.03]">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-surface-container-low/80 via-transparent to-transparent pointer-events-none" aria-hidden="true"></div>
+                <span data-design-text-token="label-sm" class="absolute top-4 left-4 px-3 py-1 rounded-full bg-dark-surface-container-lowest/85 border border-hairline font-label text-label-sm uppercase text-accent-rose">
+                  Project 01
+                </span>
+              </div>
+
+              <header class="p-6 md:p-8 pb-4 flex flex-col gap-2">
+                <h3 data-design-text-token="headline-md" class="font-headline text-headline-md text-light-on-surface dark:text-dark-on-surface">
+                  PROJECT HELM
+                </h3>
+                <p data-design-text-token="title-md" class="font-title text-title-md text-accent-rose">
+                  Smart Helmet Accident Detection &amp; SOS System
+                </p>
+              </header>
+
+              <div class="px-6 md:px-8 pb-6 flex flex-col gap-5">
+                <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate text-pretty">
+                  A smart helmet prototype designed to detect accidents using sensor-based motion analysis and trigger an SOS alert system, helping improve emergency response.
+                </p>
+
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap gap-2">
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">ESP32</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">MPU6050</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">Embedded Systems</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">Bluetooth</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">Sensors</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <footer class="px-6 md:px-8 pb-6 md:pb-8 pt-2 flex flex-wrap items-center gap-3">
+              <button type="button" data-open-modal="modal-helm" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-light-primary-container dark:bg-dark-primary-container text-light-on-primary border border-accent-burgundy hover:bg-accent-burgundy/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose transition-colors duration-state-change ease-state-change cursor-pointer">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg">View Project</span>
+              </button>
+              <button type="button" data-open-modal="modal-helm" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-light-on-surface dark:text-dark-on-surface border border-hairline hover:border-accent-rose/60 hover:bg-light-surface-container-high dark:hover:bg-dark-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose transition-colors duration-state-change ease-state-change cursor-pointer">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg">Learn More</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-accent-rose" aria-hidden="true"></i>
+              </button>
+            </footer>
+          </article>
+
+          <!-- Project 02: SMART ANIMAL DETECTION SYSTEM -->
+          <!-- COMPONENT: card-action -->
+          <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="reveal-up group rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline overflow-hidden flex flex-col justify-between transition-colors duration-card-hover ease-card-hover hover:border-accent-rose/40 h-full">
+            <div>
+              <div class="relative aspect-video overflow-hidden bg-light-surface-container-high dark:bg-dark-surface-container-high border-b border-hairline">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAi1GYSPQWlQ9QsVugrkLhCpejGP4yul0gyS-tQ2F28MiGWm_4pQbDT_uhFOjmE8wejNFKzOIBeBIT06M0POJEL6iCDZa9c5q7zIqRxGTjitu7bN-TFeiLAfqVHxEQmR7JmkPePyfs3DkDNRKtfbQqBn2hG4714yX0beZg7L89L52eFMRRiaJ2GQ9nu8sCifpAlfoNnfO63k5YKv6l6v5EosjbIkI6QlPlZ5m2Vflhn60dPRcOkj0TYgqxHLdDlXuKM9g" alt="Smart Animal Detection System edge AI computer vision camera hardware concept" class="w-full h-full object-cover transition-transform duration-chapter-reveal ease-chapter-reveal group-hover:scale-[1.03]">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-surface-container-low/80 via-transparent to-transparent pointer-events-none" aria-hidden="true"></div>
+                <span data-design-text-token="label-sm" class="absolute top-4 left-4 px-3 py-1 rounded-full bg-dark-surface-container-lowest/85 border border-hairline font-label text-label-sm uppercase text-accent-rose">
+                  Project 02
+                </span>
+              </div>
+
+              <header class="p-6 md:p-8 pb-4 flex flex-col gap-2">
+                <h3 data-design-text-token="headline-md" class="font-headline text-headline-md text-light-on-surface dark:text-dark-on-surface">
+                  SMART ANIMAL DETECTION SYSTEM
+                </h3>
+                <p data-design-text-token="title-md" class="font-title text-title-md text-accent-rose">
+                  Computer Vision Intrusion Deterrent Concept
+                </p>
+              </header>
+
+              <div class="px-6 md:px-8 pb-6 flex flex-col gap-5">
+                <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate text-pretty">
+                  An intelligent animal-detection and deterrent concept designed to identify animals through computer vision and trigger appropriate responses to reduce unwanted animal intrusion.
+                </p>
+
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap gap-2">
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">Python</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">Computer Vision</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">AI</span>
+                  </span>
+                  <span data-component-id="chip-action" data-component-type="chip" data-component-variant="action" class="inline-flex items-center px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline">
+                    <span data-design-text-token="label-sm" class="font-label text-label-sm">Hardware Integration</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <footer class="px-6 md:px-8 pb-6 md:pb-8 pt-2 flex flex-wrap items-center gap-3">
+              <button type="button" data-open-modal="modal-animal" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-light-primary-container dark:bg-dark-primary-container text-light-on-primary border border-accent-burgundy hover:bg-accent-burgundy/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose transition-colors duration-state-change ease-state-change cursor-pointer">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg">View Project</span>
+              </button>
+              <button type="button" data-open-modal="modal-animal" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-light-on-surface dark:text-dark-on-surface border border-hairline hover:border-accent-rose/60 hover:bg-light-surface-container-high dark:hover:bg-dark-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-rose transition-colors duration-state-change ease-state-change cursor-pointer">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg">Learn More</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-accent-rose" aria-hidden="true"></i>
+              </button>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section id="skills" class="py-24 md:py-32 bg-light-surface dark:bg-dark-surface border-t border-hairline">
+      <div class="max-w-6xl mx-auto px-6 md:px-10">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal-up">
+          <div>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-3">03 · Capabilities</span>
+            <h2 data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-light-on-surface dark:text-dark-on-surface text-balance">
+              Multidisciplinary Stack.
+            </h2>
+          </div>
+
+          <!-- Interactive Skill Filter Chips -->
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Filter skill categories">
+            <button type="button" data-skill-filter="all" aria-pressed="true" class="skill-filter-btn px-4 py-1.5 rounded-full bg-light-primary-container dark:bg-dark-primary-container text-light-on-primary-container dark:text-dark-on-primary-container border border-accent-burgundy font-label text-label-sm transition-colors duration-state-change cursor-pointer">All</button>
+            <button type="button" data-skill-filter="programming" aria-pressed="false" class="skill-filter-btn px-4 py-1.5 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-muted-slate border border-hairline hover:border-accent-rose/40 font-label text-label-sm transition-colors duration-state-change cursor-pointer">Programming</button>
+            <button type="button" data-skill-filter="engineering" aria-pressed="false" class="skill-filter-btn px-4 py-1.5 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-muted-slate border border-hairline hover:border-accent-rose/40 font-label text-label-sm transition-colors duration-state-change cursor-pointer">Engineering</button>
+            <button type="button" data-skill-filter="creative" aria-pressed="false" class="skill-filter-btn px-4 py-1.5 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-muted-slate border border-hairline hover:border-accent-rose/40 font-label text-label-sm transition-colors duration-state-change cursor-pointer">Creative</button>
+            <button type="button" data-skill-filter="professional" aria-pressed="false" class="skill-filter-btn px-4 py-1.5 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-muted-slate border border-hairline hover:border-accent-rose/40 font-label text-label-sm transition-colors duration-state-change cursor-pointer">Professional</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+
+          <!-- Programming -->
+          <article data-skill-card="programming" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="reveal-up p-6 md:p-8 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover flex flex-col justify-between gap-6">
+            <header class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-lg bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline flex items-center justify-center text-accent-rose">
+                  <i data-lucide="terminal" class="w-5 h-5" aria-hidden="true"></i>
+                </span>
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">Programming</h3>
+              </div>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Software</span>
+            </header>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Python</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Basic software development</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>C</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>C++</li>
+            </ul>
+          </article>
+
+          <!-- Engineering -->
+          <article data-skill-card="engineering" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="reveal-up p-6 md:p-8 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover flex flex-col justify-between gap-6">
+            <header class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-lg bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline flex items-center justify-center text-accent-rose">
+                  <i data-lucide="cpu" class="w-5 h-5" aria-hidden="true"></i>
+                </span>
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">Engineering</h3>
+              </div>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Hardware</span>
+            </header>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Electronics</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Embedded systems</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Hardware prototyping</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Engineering fundamentals</li>
+            </ul>
+          </article>
+
+          <!-- Creative -->
+          <article data-skill-card="creative" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="reveal-up p-6 md:p-8 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover flex flex-col justify-between gap-6">
+            <header class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-lg bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline flex items-center justify-center text-accent-rose">
+                  <i data-lucide="film" class="w-5 h-5" aria-hidden="true"></i>
+                </span>
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">Creative</h3>
+              </div>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Media</span>
+            </header>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Video Editing</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Visual storytelling</li>
+            </ul>
+          </article>
+
+          <!-- Professional -->
+          <article data-skill-card="professional" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="reveal-up p-6 md:p-8 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover flex flex-col justify-between gap-6">
+            <header class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-lg bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline flex items-center justify-center text-accent-rose">
+                  <i data-lucide="users" class="w-5 h-5" aria-hidden="true"></i>
+                </span>
+                <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">Professional</h3>
+              </div>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Mindset</span>
+            </header>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Communication</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Leadership</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Team collaboration</li>
+              <li class="flex items-center gap-2.5 text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90"><span class="w-1.5 h-1.5 rounded-full bg-accent-rose" aria-hidden="true"></span>Problem solving</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ACHIEVEMENTS & EXPERIENCE SECTION -->
+    <section id="achievements" class="py-24 md:py-32 bg-light-surface-container-lowest dark:bg-dark-surface-container-lowest border-t border-hairline">
+      <div class="max-w-6xl mx-auto px-6 md:px-10">
+        <div class="mb-14 reveal-up">
+          <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-3">04 · Milestones</span>
+          <h2 data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-light-on-surface dark:text-dark-on-surface text-balance">
+            Achievements &amp; Experience.
+          </h2>
+        </div>
+
+        <!-- Editorial Timeline -->
+        <div class="relative border-l border-hairline pl-6 md:pl-10 flex flex-col gap-8">
+
+          <article class="reveal-up relative p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+            <span class="absolute -left-[31px] md:-left-[47px] top-7 w-3 h-3 rounded-full bg-accent-rose border-2 border-dark-surface-container-lowest" aria-hidden="true"></span>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+              <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">
+                KPR Institute of Engineering and Technology
+              </h3>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose">Academic Foundation</span>
+            </div>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">
+              Undergraduate student pursuing Electronics and Communication Engineering, building strong foundations in circuits, embedded systems, and software engineering.
+            </p>
+          </article>
+
+          <article class="reveal-up relative p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+            <span class="absolute -left-[31px] md:-left-[47px] top-7 w-3 h-3 rounded-full bg-accent-burgundy border-2 border-dark-surface-container-lowest" aria-hidden="true"></span>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+              <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">
+                Smart India Hackathon
+              </h3>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">National Hackathon</span>
+            </div>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">
+              Active participation and collaborative team experience—ideating, architecting, and pitching technology-driven solutions under real-world problem statements.
+            </p>
+          </article>
+
+          <article class="reveal-up relative p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+            <span class="absolute -left-[31px] md:-left-[47px] top-7 w-3 h-3 rounded-full bg-accent-burgundy border-2 border-dark-surface-container-lowest" aria-hidden="true"></span>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+              <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">
+                Hackathon Project Development
+              </h3>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Rapid Prototyping</span>
+            </div>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">
+              End-to-end prototyping experience bridging microcontrollers, sensors, and computer vision pipelines into working demonstrations.
+            </p>
+          </article>
+
+          <article class="reveal-up relative p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+            <span class="absolute -left-[31px] md:-left-[47px] top-7 w-3 h-3 rounded-full bg-accent-burgundy border-2 border-dark-surface-container-lowest" aria-hidden="true"></span>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+              <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">
+                Leadership &amp; Collaborative Projects
+              </h3>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Teamwork</span>
+            </div>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">
+              Coordinating cross-disciplinary student teams, aligning technical execution with clear presentation and visual storytelling.
+            </p>
+          </article>
+
+          <article class="reveal-up relative p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/40 transition-colors duration-card-hover">
+            <span class="absolute -left-[31px] md:-left-[47px] top-7 w-3 h-3 rounded-full bg-accent-burgundy border-2 border-dark-surface-container-lowest" aria-hidden="true"></span>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+              <h3 data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface dark:text-dark-on-surface">
+                Certifications &amp; Continuous Learning
+              </h3>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">Ongoing</span>
+            </div>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">
+              Dedicated space for verified technical certifications, embedded workshops, and software development milestones.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PERSONAL BRANDING CHAPTER INTERLUDE -->
+    <section class="py-28 md:py-36 bg-light-surface dark:bg-dark-surface border-t border-hairline">
+      <div class="max-w-4xl mx-auto px-6 md:px-10 text-center reveal-up">
+        <span class="inline-block w-12 h-px bg-accent-rose mb-8" aria-hidden="true"></span>
+        <blockquote data-design-text-token="display-lg" class="font-headline italic text-display-lg-mobile md:text-display-lg text-light-on-surface dark:text-dark-on-surface text-balance">
+          “Consistency turns curiosity into capability.”
+        </blockquote>
+        <p data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose mt-8 tracking-widest">
+          Learning. Building. Evolving.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="py-24 md:py-32 bg-light-surface-container-lowest dark:bg-dark-surface-container-lowest border-t border-hairline">
+      <div class="max-w-6xl mx-auto px-6 md:px-10">
+        <div class="max-w-2xl reveal-up mb-12">
+          <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-3">05 · Connect</span>
+          <h2 data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-light-on-surface dark:text-dark-on-surface text-balance mb-4">
+            Let&#39;s Build Something Meaningful.
+          </h2>
+          <p data-design-text-token="body-lg" class="font-body text-body-lg text-muted-slate text-pretty">
+            Have an idea, opportunity, or project in mind? Let&#39;s connect.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 reveal-up">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/nishanth-placeholder" target="_blank" rel="noopener noreferrer" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/60 hover:bg-light-surface-container dark:hover:bg-dark-surface-container transition-colors duration-state-change flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <i data-lucide="linkedin" class="w-5 h-5 text-accent-rose" aria-hidden="true"></i>
+              <div>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface dark:text-dark-on-surface">LinkedIn</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">Professional profile</p>
+              </div>
+            </div>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted-slate" aria-hidden="true"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/nishanth-placeholder" target="_blank" rel="noopener noreferrer" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/60 hover:bg-light-surface-container dark:hover:bg-dark-surface-container transition-colors duration-state-change flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <i data-lucide="github" class="w-5 h-5 text-accent-rose" aria-hidden="true"></i>
+              <div>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface dark:text-dark-on-surface">GitHub</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">Code &amp; prototypes</p>
+              </div>
+            </div>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted-slate" aria-hidden="true"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:nishanth.placeholder@example.com" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="p-6 rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low border border-hairline hover:border-accent-rose/60 hover:bg-light-surface-container dark:hover:bg-dark-surface-container transition-colors duration-state-change flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <i data-lucide="mail" class="w-5 h-5 text-accent-rose" aria-hidden="true"></i>
+              <div>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface dark:text-dark-on-surface">Email</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">Direct message</p>
+              </div>
+            </div>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-muted-slate" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light-surface-container-lowest dark:bg-dark-surface-container-lowest border-t border-hairline py-10">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <p data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-muted-slate">
+        DESIGNED WITH CURIOSITY. BUILT WITH PURPOSE.
+      </p>
+      <p data-design-text-token="body-md" class="font-body text-body-md text-muted-slate">
+        © <span id="current-year">2026</span> Nishanth.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Project 01 Modal -->
+  <!-- COMPONENT: modal-standard -->
+  <dialog id="modal-helm" data-component-id="modal-standard" data-component-type="modal" data-component-variant="standard" aria-labelledby="modal-helm-title" aria-describedby="modal-helm-desc modal-helm-body" class="w-full max-w-2xl rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low text-light-on-surface dark:text-dark-on-surface border border-hairline p-6 md:p-8 backdrop:bg-dark-surface-container-lowest/85 backdrop:backdrop-blur-sm m-auto">
+    <header class="flex items-start justify-between gap-4 mb-6">
+      <div>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-1">Project 01 · Architecture</span>
+        <h2 id="modal-helm-title" data-design-text-token="headline-md" class="font-headline text-headline-md">PROJECT HELM — Smart Helmet SOS System</h2>
+        <p id="modal-helm-desc" data-design-text-token="body-md" class="font-body text-body-md text-muted-slate mt-1">Sensor-based impact detection and automated emergency alert workflow.</p>
+      </div>
+      <button type="button" data-close-modal aria-label="Close dialog" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline text-light-on-surface dark:text-dark-on-surface hover:border-accent-rose/60 cursor-pointer shrink-0">
+        <i data-lucide="x" class="w-4 h-4" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <div id="modal-helm-body" class="flex flex-col gap-4 mb-6">
+      <img src="https://lh3.googleusercontent.com/aida/ALJJyrAt81VBNHqXILJ8BA4YfD3EB5m_d60FUbEs8KQGt5KHwa1wB2UQXXhgPhFEQrm4ddUq2J7916bBbEWwEFf_kGxHhHaTjjGrtYTNzANS3N4Ky7rDVw1TPLTpUbHLrGcHPoEtrfQC7eVB4btxsnAnYts0g_J0EXyFK-RSp7GJWJxrzHrSDtCguNfq36a9XbbTmvZ9-avjG_V8A-T6Usrb_7XkqmAEvNwDRjeZCqNuRF4ROsHgWEBalg" alt="Project Helm hardware prototype" class="w-full h-52 object-cover rounded-lg border border-hairline">
+      <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90">
+        Designed around an ESP32 microcontroller paired with an MPU6050 6-axis motion sensor to continuously monitor sudden impact forces and abnormal tilt angles. Upon detecting a threshold event, the system communicates over Bluetooth to trigger an automated SOS alert for faster emergency response.
+      </p>
+      <div class="flex flex-wrap gap-2 pt-2">
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">ESP32</span>
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">MPU6050</span>
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">Embedded Systems</span>
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">Bluetooth</span>
+      </div>
+    </div>
+
+    <footer class="flex justify-end gap-3 pt-4 border-t border-hairline">
+      <button type="button" data-close-modal class="px-5 py-2 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline hover:border-accent-rose/50 cursor-pointer">
+        <span data-design-text-token="label-lg" class="font-label text-label-lg">Close</span>
+      </button>
+    </footer>
+  </dialog>
+
+  <!-- Project 02 Modal -->
+  <!-- COMPONENT: modal-standard -->
+  <dialog id="modal-animal" data-component-id="modal-standard" data-component-type="modal" data-component-variant="standard" aria-labelledby="modal-animal-title" aria-describedby="modal-animal-desc modal-animal-body" class="w-full max-w-2xl rounded-xl bg-light-surface-container-low dark:bg-dark-surface-container-low text-light-on-surface dark:text-dark-on-surface border border-hairline p-6 md:p-8 backdrop:bg-dark-surface-container-lowest/85 backdrop:backdrop-blur-sm m-auto">
+    <header class="flex items-start justify-between gap-4 mb-6">
+      <div>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm uppercase text-accent-rose block mb-1">Project 02 · Architecture</span>
+        <h2 id="modal-animal-title" data-design-text-token="headline-md" class="font-headline text-headline-md">SMART ANIMAL DETECTION SYSTEM</h2>
+        <p id="modal-animal-desc" data-design-text-token="body-md" class="font-body text-body-md text-muted-slate mt-1">Computer vision recognition paired with hardware deterrent triggers.</p>
+      </div>
+      <button type="button" data-close-modal aria-label="Close dialog" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline text-light-on-surface dark:text-dark-on-surface hover:border-accent-rose/60 cursor-pointer shrink-0">
+        <i data-lucide="x" class="w-4 h-4" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <div id="modal-animal-body" class="flex flex-col gap-4 mb-6">
+      <img src="https://lh3.googleusercontent.com/aida/ALJJyrAi1GYSPQWlQ9QsVugrkLhCpejGP4yul0gyS-tQ2F28MiGWm_4pQbDT_uhFOjmE8wejNFKzOIBeBIT06M0POJEL6iCDZa9c5q7zIqRxGTjitu7bN-TFeiLAfqVHxEQmR7JmkPePyfs3DkDNRKtfbQqBn2hG4714yX0beZg7L89L52eFMRRiaJ2GQ9nu8sCifpAlfoNnfO63k5YKv6l6v5EosjbIkI6QlPlZ5m2Vflhn60dPRcOkj0TYgqxHLdDlXuKM9g" alt="Smart Animal Detection System hardware concept" class="w-full h-52 object-cover rounded-lg border border-hairline">
+      <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface/90 dark:text-dark-on-surface/90">
+        An intelligent perimeter monitoring concept built with Python and computer vision models to detect and classify animal intrusion in real time. Once verified, the software pipeline signals connected hardware actuators to deploy safe, non-harmful deterrent responses.
+      </p>
+      <div class="flex flex-wrap gap-2 pt-2">
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">Python</span>
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">Computer Vision</span>
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">AI</span>
+        <span class="px-3 py-1 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high border border-hairline font-label text-label-sm">Hardware Integration</span>
+      </div>
+    </div>
+
+    <footer class="flex justify-end gap-3 pt-4 border-t border-hairline">
+      <button type="button" data-close-modal class="px-5 py-2 rounded-full bg-light-surface-container-high dark:bg-dark-surface-container-high text-light-on-surface dark:text-dark-on-surface border border-hairline hover:border-accent-rose/50 cursor-pointer">
+        <span data-design-text-token="label-lg" class="font-label text-label-lg">Close</span>
+      </button>
+    </footer>
+  </dialog>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      // Dynamic year
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Navbar scroll glass transition + subtle portrait parallax
+      const navbar = document.getElementById('site-navbar');
+      const portraitImg = document.getElementById('hero-portrait-img');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const onScroll = () => {
+        if (window.scrollY > 36) {
+          navbar.classList.add('bg-dark-surface-container-lowest/80', 'backdrop-blur-md', 'border-b', 'border-hairline');
+        } else {
+          navbar.classList.remove('bg-dark-surface-container-lowest/80', 'backdrop-blur-md', 'border-b', 'border-hairline');
+        }
+
+        if (!reducedMotion && portraitImg && window.scrollY < 900) {
+          portraitImg.style.transform = `translateY(${window.scrollY * 0.06}px)`;
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Mobile menu toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          const isOpen = !mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden');
+          mobileBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+        document.querySelectorAll('.mobile-nav-item').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // Scroll-triggered reveals
+      const revealEls = document.querySelectorAll('.reveal-up');
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => observer.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      // Interactive Skill Filter
+      const filterBtns = document.querySelectorAll('.skill-filter-btn');
+      const skillCards = document.querySelectorAll('[data-skill-card]');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.getAttribute('data-skill-filter');
+          filterBtns.forEach(b => {
+            const active = b === btn;
+            b.setAttribute('aria-pressed', String(active));
+            b.className = active
+              ? 'skill-filter-btn px-4 py-1.5 rounded-full bg-light-primary-container dark:bg-dark-primary-container text-light-on-primary-container dark:text-dark-on-primary-container border border-accent-burgundy font-label text-label-sm transition-colors duration-state-change cursor-pointer'
+              : 'skill-filter-btn px-4 py-1.5 rounded-full bg-light-surface-container-low dark:bg-dark-surface-container-low text-muted-slate border border-hairline hover:border-accent-rose/40 font-label text-label-sm transition-colors duration-state-change cursor-pointer';
+          });
+          skillCards.forEach(card => {
+            const cat = card.getAttribute('data-skill-card');
+            if (target === 'all' || cat === target) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Project Modals
+      document.querySelectorAll('[data-open-modal]').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const modalId = trigger.getAttribute('data-open-modal');
+          const dialog = document.getElementById(modalId);
+          if (dialog && typeof dialog.showModal === 'function') {
+            dialog.showModal();
+          }
+        });
+      });
+
+      document.querySelectorAll('dialog').forEach(dialog => {
+        dialog.querySelectorAll('[data-close-modal]').forEach(btn => {
+          btn.addEventListener('click', () => dialog.close());
+        });
+        dialog.addEventListener('click', (e) => {
+          if (e.target === dialog) dialog.close();
+        });
+      });
+
+      // Subtle Custom Cursor Ring
+      const cursorRing = document.getElementById('cursor-ring');
+      if (cursorRing && !reducedMotion && window.matchMedia('(pointer: fine)').matches) {
+        window.addEventListener('mousemove', (e) => {
+          cursorRing.style.opacity = '1';
+          cursorRing.style.left = `${e.clientX}px`;
+          cursorRing.style.top = `${e.clientY}px`;
+        }, { passive: true });
+        document.querySelectorAll('a, button').forEach(el => {
+          el.addEventListener('mouseenter', () => cursorRing.classList.add('is-hovering'));
+          el.addEventListener('mouseleave', () => cursorRing.classList.remove('is-hovering'));
+        });
+      }
+    });
+  </script>
+
+
+</body></html>
